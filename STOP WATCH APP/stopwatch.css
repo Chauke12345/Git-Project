@@ -1,0 +1,76 @@
+/* Define layers */
+@layer reset, base, components;
+
+/* RESET LAYER */
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* BASE LAYER */
+@layer base {
+  body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    border-radius: 10;
+  }
+}
+
+/* COMPONENTS LAYER */
+@layer components {
+
+}
+
+  .stopwatch {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 280px;
+  }
+
+  .time {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  .start {
+    background: #22c55e;
+  }
+
+  .stop {
+    background: #ef4444;
+  }
+
+  .reset {
+    background: #3b82f6;
+  }
